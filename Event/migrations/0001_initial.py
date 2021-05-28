@@ -12,12 +12,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Mode',
+            name='Event',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('email', models.CharField(max_length=250, unique=True)),
-                ('mode_active', models.BooleanField(default=False)),
-                ('username', models.CharField(default='', max_length=250, unique=True)),
+                ('eventname', models.CharField(max_length=50)),
             ],
         ),
     ]
